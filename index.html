@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <meta charset="utf8">
+    <meta name="viewport"
+    content="width=device-width,intial-scale=1.0">
+    <title>Random Password Generator</title>
+    <link rel="stylesheet"href="css/passGenStyle.css">
+</head>
+<body>
+     
+    <div class="container">
+        <div class="card">
+            <h2>Random Passwoard Generator</h2>
+
+            <!--output display and copy triger-->
+    <div class="output-group">
+        <input type="text" id="output" class="output" readonly placeholder="click generate">
+        <button type="button" id="copyBtn" class="copy-btn">Copy</button>
+    </div>
+
+    <!--Length selector-->
+    <div class ="control-row">
+        <label for="lengthslider">Length: <span id="lengthvalue">16 </span></label>
+        <input type="range" id="lengthSlider" min="6" max="32" value="16">
+    </div>
+
+    <!--primary action-->
+        <button type="button" id="generateBtn" class="main-btn">Generate Password</button> 
+    
+<!--history log--> 
+<div class="history-group"><label for="history dropdown">Recent Password (Last 10):</lable>
+<select id="historyDropdown"><option value="" disabled selected>no saved passwords yet</option>
+ </select>
+</div>   
+</div>
+</div>
+
+<script src="js/passGeneratorScript.js"></script>
+    </body>
+</html>
